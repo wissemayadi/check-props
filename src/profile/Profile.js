@@ -23,7 +23,7 @@ Getdata.propTypes = {
     
   
 
-  handelName: PropTypes.func.isRequired,
+  handelName: PropTypes.func.isRequired
 };
 
 Getdata.defaultProps = {

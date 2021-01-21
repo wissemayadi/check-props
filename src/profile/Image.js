@@ -1,8 +1,5 @@
 import React from 'react';
 
-// import React, { Component } from 'react';
-
-
 import ImageP from '/Users/naderayadi/Desktop/checkpoint/checkpro/src/imageInPublic.jpg';
 const Picture = (props) => {
     return (

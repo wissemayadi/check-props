@@ -6,23 +6,31 @@ import Getdata from './profile/Profile';
 import Picture from './profile/Image';
 import ActionComponent from './data';
 import Navigation from './NavbarPro/NavNavigation';
+
+
 function App() {
+  const styleObject={color:"red",fontSize:"150%",size:"50px",fontFamily:'Times New Roman, Times, serif',textShadow:' 20px 20px blue'} 
+  const ImageStyle={ padding:'10px'}
   return (
     <div className="App">
      <span><Navigation/></span>
-
-      <Getdata Firstname="wissem" Lastname="ayadi"/>
-      <div>
-        <Getdata Biblio="je suis ingenieur en informatique"/>
-      </div>
-     <div>
-     <Picture />
+      
+      
+      <div  style={styleObject}>
+      <Getdata Firstname="Wissem" 
+      Lastname=" Ayadi"
+      Biblio=" Je suis ingenieur en informatique"
+      />
+      </div><br/>
+     <div style={ImageStyle}> 
+     <Picture  />
        
      </div>
-    <ActionComponent />
+    <ActionComponent Firstname="wissem"/>
 
    <Footer/>
 
+  
     </div>
   );
 }
